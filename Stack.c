@@ -36,7 +36,7 @@ void push(Stack* stack, int value) {
 // Funkcija pašalinti ir grąžinti elementą iš steko
 int pop(Stack* stack) {
     if (isEmpty(stack)) {
-        printf("Error: Stack is empty no elements to pop\n");
+        printf("Klaida: Stekas tuščias, nėra ką gražinti\n");
         exit(1);  
     }
     Node* temp = stack->top;  // Laikome viršutinį mazgą laikinyje kintamajame
@@ -49,7 +49,7 @@ int pop(Stack* stack) {
 // Funkcija peržiūrėti viršutinį elementą (peek)
 int peek(Stack* stack) {
     if (isEmpty(stack)) {
-        printf("Error: Stack is empty no elements to peek\n");
+        printf("Klaida: Stekas tuščias nėrą ką peržiūrėti\n");
         exit(1);  // Jei stekas tuščias, nutraukiame programą su klaidos pranešimu
     }
     return stack->top->value;  // Grąžiname viršutinį elementą
