@@ -39,11 +39,11 @@ int pop(Stack* stack) {
         printf("Klaida: Stekas tuščias, nėra ką gražinti\n");
         exit(1);  
     }
-    Node* temp = stack->top;  // Laikome viršutinį mazgą laikinyje kintamajame
-    int value = temp->value;         // Saugojame vertę, kurią pašalinsime
-    stack->top = stack->top->next;   // Atnaujiname viršų
-    free(temp);  // Išlaisviname atmintį
-    return value;  // Grąžiname pašalintą vertę
+    Node* temp = stack->top;  
+    int value = temp->value;         
+    stack->top = stack->top->next;   
+    free(temp);  
+    return value;  
 }
 
 // Funkcija peržiūrėti viršutinį elementą (peek)
@@ -52,7 +52,7 @@ int peek(Stack* stack) {
         printf("Klaida: Stekas tuščias nėrą ką peržiūrėti\n");
         exit(1);  // Jei stekas tuščias, nutraukiame programą su klaidos pranešimu
     }
-    return stack->top->value;  // Grąžiname viršutinį elementą
+    return stack->top->value;  
 }
 
 // Funkcija, kuri išlaisvina visą atmintį, susijusią su steku
@@ -61,12 +61,12 @@ void freeStack(Stack* stack) {
     Node* nextNode;
 
     while (current != NULL) {
-        nextNode = current->next;  // Saugojame nuorodą į kitą mazgą
-        free(current);  // Išlaisviname atmintį už dabartinį mazgą
-        current = nextNode;  // Pereiname prie kito mazgo
+        nextNode = current->next;  
+        free(current);  
+        current = nextNode;  
     }
 
-    stack->top = NULL;  // Stekas dabar yra tuščias
+    stack->top = NULL;  
 }
 
 int main(){
