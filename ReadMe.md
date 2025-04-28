@@ -42,7 +42,7 @@ make
 
 - Maksimalus aptarnavimo laikas minutėmis (numatyta: 10)
 
-[-rnd] - Atsitiktinių skaičių generatoriaus pradinė reikšmė (numatyta: sistema)
+[-rnd] - Atsitiktinių skaičių generatoriaus pradinė reikšmė (numatyta: sistema)\
 [-t] - Programa paleidžiama su numatytais parametrais.
 
 ```
