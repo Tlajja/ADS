@@ -1,0 +1,15 @@
+Mathematical Analysis: None
+Linear Algebra: None
+Programming Fundamentals: None
+Discrete Mathematics: None
+Physics I: None
+Probability Theory: Mathematical Analysis
+Algorithms: Programming Fundamentals, Discrete Mathematics
+Data Structures: Programming Fundamentals
+Optimization Methods: Mathematical Analysis, Linear Algebra
+Statistics: Probability Theory, Algorithms
+Operating Systems: Data Structures
+Database Systems: Data Structures
+Computer Networks: Operating Systems
+Artificial Intelligence: Algorithms, Statistics
+Digital Logic: Physics I
